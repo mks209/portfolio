@@ -1,5 +1,37 @@
 header {
   background-color: white;
-  margin-bottom: 2px black; }
+  border-bottom: 2px solid black;
+  border-top: 5px solid black;
+  width: 80%;
+  height: 2.5em; }
+  header a:hover {
+    color: blue; }
+
+html {
+  font-size: 100%;
+  box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400; }
+
+/* unvisited link */
+a:link {
+  text-decoration: none; }
+
+/* visited link */
+a:visited {
+  text-decoration: none; }
+
+/* mouse over link */
+a:hover {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
