@@ -1,6 +1,6 @@
 /* Variables  */
 $main-blue: #4361ee;
-
+$light-peach: 
 
 /* Header Styling  */
 .headercont {
@@ -56,26 +56,43 @@ body {
 .banner {
     display: grid;
     margin: 30px;
-    width: 80%;
+    width: 90%;
     height: 500px;
-    grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr 2fr 1fr 1fr / 1fr 2fr 1fr 1fr;
+    border-bottom: 0.5px solid black;
 
     h1 {
         font-family: 'EB Garamond', serif;
         font-weight: 400;
-        grid-area: 2 / 3 / 3 / 4;
+        grid-area: 2 / 3 / 3 / 5;
         max-width: 100%;
     }
 
 
     img {
         max-width: 100%;
-        grid-area: 2 / 1 / 3 / 3;
+        grid-area: 1 / 1 / 4 / 3;
 
     }
     .menu2 {
-        grid-area: 3 / 3 / 4 / 4;
+        grid-area: 3 / 3 / 4 / 5;
+        margin-left: 10em;
+        margin-bottom: 5em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        li {
+            list-style-type: none;
+            line-height: 3em;
+            border-top: 1px solid black;
+            text-decoration: none;
+        }
+        a { color: inherit; } 
+        #tool {
+            border-bottom: 1px solid black;
+        }
     }
+    
 
 }
 
