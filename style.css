@@ -16,10 +16,12 @@ body {
 .headercont {
   display: flex;
   justify-content: center;
-  font-size: 10px; }
+  font-size: 10px;
+  position: fixed; }
 
 header {
-  width: 100%; }
+  width: 100%;
+  position: fixed; }
 
 .gridhead {
   border-bottom: 2px solid black;
@@ -30,7 +32,10 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  background-color: #F6CCB0;
+  opacity: 100%; }
 
 header a {
   color: black;
@@ -39,12 +44,6 @@ header a {
 .menu {
   grid-column: 2 / 3;
   justify-self: end; }
-
-.logo {
-  grid-column: 1 / 2;
-  justify-self: start;
-  max-width: 100%;
-  overflow: hidden; }
 
 /* Banner Styling  */
 .bannercont {
@@ -56,17 +55,17 @@ header a {
   margin: 20px;
   width: 90%;
   height: 100vh;
-  grid-template: 1fr 4fr 2fr 1fr / 1fr;
+  grid-template: 50px 1fr 4fr 2fr 1fr / 1fr;
   border-bottom: 0.5px solid black;
   justify-items: center;
   align-items: end; }
 
 .banner img {
   max-width: 100%;
-  grid-area: 2 / 1 / 3 / 1; }
+  grid-area: 3 / 1 / 4 / 1; }
 
 .menu2 {
-  grid-area: 2 / 1 / 4 / 2;
+  grid-area: 3 / 1 / 5 / 2;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -75,7 +74,7 @@ header a {
 .banner h1 {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 2 / 1 / 3 / 2;
   max-width: 100%;
   font-size: 2rem; }
 
