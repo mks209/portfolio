@@ -6,12 +6,13 @@ html {
 /* Variables  */
 $main-blue: #4361ee;
 $light-peach: #F6CCB0;
+$grey: #D9d9d9;
 
 
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    min-height: 100%;
     font-family: 'Oxygen', sans-serif;
     font-weight: 400;
     background-color: $light-peach;
@@ -54,7 +55,7 @@ header a {
 }
 
 
-/* Banner Styling  */
+/*-------------------------------- BANNER -----------------------------------*/
 .bannercont {
     display: flex;
     justify-content: center;
@@ -134,7 +135,9 @@ header a {
 }
 
 
-/* ABOUT ME SECTION */
+
+/*-------------------------------- ABOUT ME -----------------------------------*/
+
 .aboutmecontainer {
     display: flex;
     justify-content: center;
@@ -153,11 +156,61 @@ header a {
     grid-area: 1 / 1 / 4 / 2;
     max-width: 100%;
     margin: 5% 0% 0% 20%;
+    h2 {
+        font-family: EB Garamond, serif;
+    }
 }
 .aboutmecontainer img {
     grid-area: 1 / 2 / 4 / 3;
     max-width: 80%;
 }
+
+
+
+/*-------------------------------- FOOTER -----------------------------------*/
+.footerflex {
+    display: flex;
+    justify-content: center;
+}
+.footercontainer {
+    display: grid;
+    width: 100vw;
+    height: 60vh;
+    bottom: 0;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    justify-items: center;
+}
+footer {
+    margin: 8% 8% 0 8%;
+    background-color: $grey;
+    width: 100vw;
+    height: 60vh;
+    bottom: 0;
+    img {
+        width: 10%;
+    }
+    h2 {
+        font-family: 'EB Garamond', serif;
+        grid-area: 1 / 1 / 2 / 4;
+    }
+}
+.contactinfo {
+    grid-area: 2 / 1 / 6 / 4;
+    margin-left: 8%;
+}
+.social-icons {
+    display: inline-flex;
+    justify-content: flex-start;
+    img {
+        margin-right: 5%;
+    }
+}
+.cardpic {
+    grid-area: 2 / 3 / 6 / 6;
+    width: 100%;
+}
+
 /* unvisited link */
 a:link {
     text-decoration:none;
