@@ -335,6 +335,14 @@ hr.style2 {
             width: 100%;
             height: 60vh;
             background-color: $light-peach;
+            display: grid;
+            justify-items: center;
+            grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+            img {
+                grid-area: 1 / 1 / 3 / 4;
+                width: 90%;
+                z-index: 10;
+            }
         }
 
         .big-article-container {
@@ -476,7 +484,14 @@ hr.style2 {
 
 
   /*--------------------------------  ARTICLE PAGE STYLING -----------------------------------*/
-    .cover-img {
+  .pinkbox {
+    img {
+        width: 60%;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+}
+
+  .cover-img {
         width: 70%;
         height: 60vh;
         }
