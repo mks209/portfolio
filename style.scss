@@ -7,8 +7,8 @@ html {
 /* Variables  */
 $main-blue: #4361ee;
 $light-peach: #F6CCB0;
+$dark-peach: #EEB188;
 $grey: #D9d9d9;
-
 
 body {
     margin: 0;
@@ -16,8 +16,16 @@ body {
     min-height: 100vh;
     font-family: 'Oxygen', sans-serif;
     font-weight: 400;
-    background-color: $light-peach;
+    background-color: white;
     color: black;
+    h1 {
+        font-family: 'EB Garamond', serif;
+        font-weight: 700;
+    }
+    h4 {
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 400;
+    }
 }
 
 /*-------------------------------- HEADER STYLING -----------------------------------*/
@@ -26,12 +34,11 @@ body {
     justify-content: center;
 }
 .header-cont {
-    width: 90%;
-    border-top: 5px solid black;
-    border-bottom: 1px solid black; 
+    width: 100%;
+    border-top: 5px solid black; 
     height: 4em;
     position: fixed;
-    background-color: $light-peach;
+    background-color: $dark-peach;
     z-index: 50;
 }
 .grid-head {
@@ -40,6 +47,10 @@ body {
     align-items: center;
     width: 100%;
     grid-template-columns: 1fr 2fr;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+-moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+
 }
 .menu {
     grid-area: 1 / 2 / 2 / 3;
@@ -48,12 +59,13 @@ body {
         padding: 0 10px;
         color: black;
         font-size: 85%;
+        text-transform: uppercase;
     }
 }
 .logo {
     grid-area: 1 / 1 / 2 / 2;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.3rem;
+    height: 2.3rem;
     object-fit: cover;
     margin-left: 0.2rem;
 }
@@ -295,6 +307,7 @@ hr.style2 {
     grid-template-columns: repeat(auto-fit, 
     minmax(300px , 1fr));
     width: 100vw;
+    background-color: $light-peach;
     img {
         width: 100%;
     }
@@ -315,6 +328,50 @@ hr.style2 {
         .card-details a {
         align-self: flex-start;
         }
+
+  /*-------------------------------- ARTICLE PAGE STYLING -----------------------------------*/
+        .article-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+        }
+
+        article {
+            display: grid;
+            width: 100vw;
+            height: auto;
+            margin-top: 2rem;
+            grid-template-columns: 0.5fr 1fr 1fr 7fr 1fr 1fr 0.5fr;
+            grid-template-rows: auto auto auto;
+            h4 {
+                color: $main-blue;
+            }
+            p {
+                line-height: 2;
+                font-size: 100%;
+                font-weight: 300;
+                text-align: justify;
+            }
+            h1 {
+                padding-bottom: 1rem;
+                border-bottom: 1px solid black;
+            }
+        } 
+        
+        .article-meat {
+            grid-area: 2 / 4 / 3 / 5;
+        }
+        
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60vh;
+            margin-top: 7rem;
+        }
+    
+    
+/*-------------------------------- RESPONSIVE MEDIA QUERIES -----------------------------------*/
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -391,3 +448,8 @@ hr.style2 {
    }
 
   } 
+   /*-------------------------------- BLOG ARTICLE PAGE STYLING -----------------------------------*/
+   
+
+
+     

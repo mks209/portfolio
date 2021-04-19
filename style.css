@@ -10,8 +10,14 @@ body {
   min-height: 100vh;
   font-family: 'Oxygen', sans-serif;
   font-weight: 400;
-  background-color: #F6CCB0;
+  background-color: white;
   color: black; }
+  body h1 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700; }
+  body h4 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400; }
 
 /*-------------------------------- HEADER STYLING -----------------------------------*/
 .center-header {
@@ -19,12 +25,11 @@ body {
   justify-content: center; }
 
 .header-cont {
-  width: 90%;
+  width: 100%;
   border-top: 5px solid black;
-  border-bottom: 1px solid black;
   height: 4em;
   position: fixed;
-  background-color: #F6CCB0;
+  background-color: #EEB188;
   z-index: 50; }
 
 .grid-head {
@@ -32,7 +37,10 @@ body {
   height: 4em;
   align-items: center;
   width: 100%;
-  grid-template-columns: 1fr 2fr; }
+  grid-template-columns: 1fr 2fr;
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25); }
 
 .menu {
   grid-area: 1 / 2 / 2 / 3;
@@ -40,12 +48,13 @@ body {
   .menu a {
     padding: 0 10px;
     color: black;
-    font-size: 85%; }
+    font-size: 85%;
+    text-transform: uppercase; }
 
 .logo {
   grid-area: 1 / 1 / 2 / 2;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.3rem;
+  height: 2.3rem;
   object-fit: cover;
   margin-left: 0.2rem; }
 
@@ -256,7 +265,8 @@ hr.style2 {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 100vw; }
+  width: 100vw;
+  background-color: #F6CCB0; }
   .card-list img {
     width: 100%; }
 
@@ -273,6 +283,41 @@ hr.style2 {
 .card-details a {
   align-self: flex-start; }
 
+/*-------------------------------- ARTICLE PAGE STYLING -----------------------------------*/
+.article-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw; }
+
+article {
+  display: grid;
+  width: 100vw;
+  height: auto;
+  margin-top: 2rem;
+  grid-template-columns: 0.5fr 1fr 1fr 7fr 1fr 1fr 0.5fr;
+  grid-template-rows: auto auto auto; }
+  article h4 {
+    color: #4361ee; }
+  article p {
+    line-height: 2;
+    font-size: 100%;
+    font-weight: 300;
+    text-align: justify; }
+  article h1 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black; }
+
+.article-meat {
+  grid-area: 2 / 4 / 3 / 5; }
+
+.cover-img {
+  object-fit: cover;
+  width: 100%;
+  height: 60vh;
+  margin-top: 7rem; }
+
+/*-------------------------------- RESPONSIVE MEDIA QUERIES -----------------------------------*/
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%; }
@@ -387,5 +432,6 @@ hr.style2 {
 
   .footercontainer {
     max-height: 5%; } }
+/*-------------------------------- BLOG ARTICLE PAGE STYLING -----------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
