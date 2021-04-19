@@ -13,11 +13,14 @@ body {
   background-color: white;
   color: black; }
   body h1 {
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
     font-weight: 700; }
   body h4 {
     font-family: 'Oxygen', sans-serif;
     font-weight: 400; }
+  body h2 {
+    font-family: "EB Garamond", serif;
+    font-weight: 700; }
 
 /*-------------------------------- HEADER STYLING -----------------------------------*/
 .center-header {
@@ -72,7 +75,7 @@ body {
   justify-items: center;
   align-items: end; }
 
-.banner img {
+.girl-drawing {
   max-width: 100%;
   grid-area: 3 / 1 / 4 / 1; }
 
@@ -84,7 +87,7 @@ body {
   flex-wrap: wrap; }
 
 .banner h1 {
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-weight: 400;
   grid-area: 2 / 1 / 3 / 2;
   max-width: 100%;
@@ -151,9 +154,6 @@ body {
   max-width: 100%;
   margin: 5% 0 0 20%; }
 
-h2 {
-  font-family: EB Garamond, serif; }
-
 .aboutmecontainer img {
   grid-area: 1 / 2 / 4 / 3;
   max-width: 80%; }
@@ -181,8 +181,8 @@ footer {
   footer img {
     width: 10%; }
   footer h2 {
-    font-family: 'EB Garamond', serif;
-    grid-area: 1 / 1 / 2 / 4; }
+    grid-area: 1 / 1 / 2 / 4;
+    font-weight: 700px; }
 
 .contactinfo {
   grid-area: 2 / 1 / 6 / 4;
@@ -233,7 +233,7 @@ a:hover {
   grid-area: 3 / 1 / 4 / 2;
   width: 100%;
   text-align: center;
-  font-family: EB Garamond, serif;
+  font-family: "EB Garamond", serif;
   position: relative;
   bottom: 1rem; }
   .blog-title p {
@@ -317,9 +317,10 @@ hr.style2 {
     padding-bottom: 1rem;
     font-size: 85%; }
   .article-flex h1 {
-    padding-top: 5rem;
+    padding-top: 3rem;
     font-size: 250%;
     text-align: left;
+    font-weight: 700;
     width: 90%;
     color: #0D5EBA;
     background-color: transparent; }
@@ -425,7 +426,7 @@ article {
   .col-12 {
     width: 100%; }
 
-  /*-------------------------------- HEADER STYLING -----------------------------------*/
+  /*-------------------------------- HEADER Re-STYLING -----------------------------------*/
   .menu {
     grid-area: 1 / 2 / 2 / 3;
     justify-self: end; }
@@ -434,7 +435,25 @@ article {
       color: black;
       font-size: 105%; }
 
-  /*-------------------------------- BLOG LIST STYLING -----------------------------------*/
+  /*-------------------------------- Footer Re-STYLING -----------------------------------*/
+  /*-------------------------------- HOME BANNER Re-STYLING -----------------------------------*/
+  .banner {
+    grid-template: 4em repeat(5, 1fr)/repeat(5, 1fr);
+    align-items: center; }
+
+  .banner h1 {
+    grid-area: 2 / 3 / 4 / 6;
+    font-size: 400%;
+    margin-left: 20%; }
+
+  .girl-drawing {
+    grid-area: 4 / 1 / 6 / 4;
+    width: 100%; }
+
+  .menu2 {
+    grid-area: 5 / 4 / 7 / 6; }
+
+  /*-------------------------------- BLOG LIST Re-STYLING -----------------------------------*/
   .typing-img {
     max-width: 40%;
     position: relative;
@@ -461,7 +480,7 @@ article {
   .footercontainer {
     max-height: 5%; }
 
-  /*--------------------------------  ARTICLE PAGE STYLING -----------------------------------*/
+  /*--------------------------------  ARTICLE PAGE Re-STYLING -----------------------------------*/
   .pinkbox img {
     width: 60%;
     grid-area: 1 / 2 / 2 / 3; }

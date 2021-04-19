@@ -9,6 +9,7 @@ $main-blue: #0D5EBA;
 $light-peach: #F6CCB0;
 $dark-peach: #EEB188;
 $grey: #D9d9d9;
+$headingfont: 'EB Garamond', serif;
 
 body {
     margin: 0;
@@ -19,12 +20,16 @@ body {
     background-color: white;
     color: black;
     h1 {
-        font-family: 'EB Garamond', serif;
+        font-family: $headingfont;
         font-weight: 700;
     }
     h4 {
         font-family: 'Oxygen', sans-serif;
         font-weight: 400;
+    }
+    h2 {
+        font-family: $headingfont;
+        font-weight: 700;
     }
 }
 
@@ -83,7 +88,7 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     justify-items: center;
     align-items: end;
     }
-.banner img {
+.girl-drawing {
         max-width: 100%;
         grid-area: 3 / 1 / 4 / 1;
     }
@@ -95,7 +100,7 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     flex-wrap: wrap;
 }
 .banner h1 {
-        font-family: 'EB Garamond', serif;
+        font-family: $headingfont;
         font-weight: 400;
         grid-area: 2 / 1 / 3 / 2;
         max-width: 100%;
@@ -172,9 +177,7 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     margin: 5% 0 0 20%;
    
 }
-h2 {
-    font-family: EB Garamond, serif;
-}
+
 .aboutmecontainer img {
     grid-area: 1 / 2 / 4 / 3;
     max-width: 80%;
@@ -206,10 +209,11 @@ footer {
         width: 10%;
     }
     h2 {
-        font-family: 'EB Garamond', serif;
         grid-area: 1 / 1 / 2 / 4;
+        font-weight: 700px;
     }
 }
+
 .contactinfo {
     grid-area: 2 / 1 / 6 / 4;
     margin-left: 8%;
@@ -266,7 +270,7 @@ a:hover {
     grid-area: 3 / 1 / 4 / 2;
     width: 100%;
     text-align: center;
-    font-family: EB Garamond, serif;
+    font-family: $headingfont;
     position: relative;
     bottom: 1rem;
     p {
@@ -368,9 +372,10 @@ hr.style2 {
             font-size: 85%;
             }
             h1 {
-            padding-top: 5rem;
+            padding-top: 3rem;
             font-size: 250%;
             text-align: left;
+            font-weight: 700;
             width: 90%;
             color: $main-blue;
             background-color: transparent;
@@ -442,7 +447,7 @@ hr.style2 {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
-    /*-------------------------------- HEADER STYLING -----------------------------------*/
+    /*-------------------------------- HEADER Re-STYLING -----------------------------------*/
 
     .menu {
         grid-area: 1 / 2 / 2 / 3;
@@ -453,7 +458,30 @@ hr.style2 {
             font-size: 105%;
         }
     }
-    /*-------------------------------- BLOG LIST STYLING -----------------------------------*/
+
+     /*-------------------------------- Footer Re-STYLING -----------------------------------*/
+
+
+      /*-------------------------------- HOME BANNER Re-STYLING -----------------------------------*/
+
+    .banner {
+        grid-template: 4em repeat(5, 1fr) / repeat(5, 1fr);
+        align-items: center;
+    }
+    .banner h1 {
+        grid-area: 2 / 3 / 4 / 6;
+        font-size: 400%;
+        margin-left: 20%;
+    }
+    .girl-drawing {
+        grid-area: 4 / 1 / 6 / 4;
+        width: 100%;
+    }
+    .menu2 {
+        grid-area: 5 / 4 / 7 / 6;
+    }
+
+    /*-------------------------------- BLOG LIST Re-STYLING -----------------------------------*/
 
     .typing-img {
         max-width: 40%;
@@ -483,7 +511,7 @@ hr.style2 {
    }
 
 
-  /*--------------------------------  ARTICLE PAGE STYLING -----------------------------------*/
+  /*--------------------------------  ARTICLE PAGE Re-STYLING -----------------------------------*/
   .pinkbox {
     img {
         width: 60%;
