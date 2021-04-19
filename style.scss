@@ -190,6 +190,8 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
 .footerflex {
     display: flex;
     justify-content: center;
+    height: fit-content;
+    background-color: $dark-peach;
 }
 .footer-container {
     display: grid;
@@ -271,13 +273,10 @@ a:hover {
     justify-items: center;
     align-items: center;
     margin: 0 3% 0 3%;
-    button {
-        width: 50%;
-        height: 100%;
-        grid-area: 4 / 1 / 5 / 2;
-    }
 
 }
+
+
 .blog-title {
     grid-area: 3 / 1 / 4 / 2;
     width: 100%;
@@ -324,6 +323,9 @@ hr.style2 {
   .button-hover img:hover {
     transform: scale(1.5);
   }
+  .replace-img {
+      display: none;
+  }
 
   /*-------------------------------- BLOG LIST -----------------------------------*/
 
@@ -333,7 +335,9 @@ hr.style2 {
     grid-template-columns: repeat(auto-fit, 
     minmax(300px , 1fr));
     width: 100vw;
+    height: fit-content; 
     background-color: $light-peach;
+    padding-top: 3rem;
     img {
         width: 100%;
     }
@@ -354,7 +358,9 @@ hr.style2 {
         .card-details a {
         align-self: flex-start;
         }
-
+        .card-container {
+            background-color: $dark-peach;
+        }
   /*-------------------------------- ARTICLE PAGE STYLING -----------------------------------*/
 
         .pinkbox {
@@ -484,14 +490,14 @@ hr.style2 {
      /*-------------------------------- Header Re-STYLING -----------------------------------*/
 
     .header-cont {
-        height: 5em;
+        height: 4rem;
     }
     .grid-head {
-        height: 5em;
+        height: 4rem;
     }
     .logo {
-        width: 4rem;
-        height: 4rem;
+        width: 3.6rem;
+        height: 3.6rem;
     }
     /*-------------------------------- About Me Re-STYLING -----------------------------------*/
     .mouse {
@@ -503,9 +509,7 @@ hr.style2 {
 
      /*-------------------------------- Footer Re-STYLING -----------------------------------*/
     
-     .footerflex {  
-         height: 30vh;
-        }
+    
      .footer-container {
          height: 30vh;
          grid-template: repeat(5, 1fr) / 2fr 2fr 2fr 2fr 2fr;
@@ -564,8 +568,60 @@ hr.style2 {
     .banner ul {
         line-height: 8vh;
     }
+  /*--------------------------------  Blog Main Banner Re-STYLING -----------------------------------*/
+    .blog-banner-container {
+        grid-template: 5rem 1fr 1fr / 1fr 1fr 1fr !important;
+        height: 100vh;
+        justify-items: center;
+    }
+    .blog-title {
+        grid-area: 3 / 2 / 5 / 3;
+    }
+    .typing-img {
+        grid-area: 4 / 1 / 8 / 3;
+        object-fit: fill;
+        }
+        .writing-img {
+            display:none
+        }
+    .replace-img {
+        display: block;
+        grid-area: 4 / 3 / 8 / 4;
+        width: 100%;
+    }
+    .blog-title {
+        font-size: 2.5vw;
+    }
+    .blog-title p {
+        font-size: 1.5vw;
+    }
+    .black-button {
+        width: 3vw;
+        margin-top: 2rem;
+    }
 
+    .card-container {
+       display: flex;
+       justify-content: center;
+       background-color: $dark-peach;
+   }
+  
     /*-------------------------------- BLOG LIST Re-STYLING -----------------------------------*/
+    .blog-major-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .card-container {
+        display: flex;
+        justify-content: center;
+        background-color: $dark-peach;
+    }
+    .card-list {
+        width: 50%;
+    }
+
 
     .typing-img {
         max-width: 40%;
@@ -583,9 +639,6 @@ hr.style2 {
     }
    .thepush {
        font-size: 200%;
-   }
-   .blog-major-container {
-       margin-bottom: 50px;
    }
    .cardpic {
        max-width: 40%;
@@ -635,6 +688,5 @@ hr.style2 {
     }
 
   } 
-   
    
 
