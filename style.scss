@@ -5,7 +5,7 @@ html {
 }
 
 /* Variables  */
-$main-blue: #4361ee;
+$main-blue: #0D5EBA;
 $light-peach: #F6CCB0;
 $dark-peach: #EEB188;
 $grey: #D9d9d9;
@@ -50,7 +50,6 @@ body {
     -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
 -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
 box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-
 }
 .menu {
     grid-area: 1 / 2 / 2 / 3;
@@ -64,8 +63,8 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
 }
 .logo {
     grid-area: 1 / 1 / 2 / 2;
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: cover;
     margin-left: 0.2rem;
 }
@@ -330,11 +329,44 @@ hr.style2 {
         }
 
   /*-------------------------------- ARTICLE PAGE STYLING -----------------------------------*/
+
+        .pinkbox {
+            margin-top: 4em;
+            width: 100%;
+            height: 60vh;
+            background-color: $light-peach;
+        }
+
+        .big-article-container {
+            display: flex;
+            justify-content: center;
+        }
+
         .article-flex {
+            position: relative;
+            bottom: 130px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100vw;
+            width: 85vw;
+            background-color: white;
+            
+            h4 {
+            border-top: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 85%;
+            }
+            h1 {
+            padding-top: 5rem;
+            font-size: 250%;
+            text-align: left;
+            width: 90%;
+            color: $main-blue;
+            background-color: transparent;
+            }
         }
 
         article {
@@ -342,32 +374,27 @@ hr.style2 {
             width: 100vw;
             height: auto;
             margin-top: 2rem;
-            grid-template-columns: 0.5fr 1fr 1fr 7fr 1fr 1fr 0.5fr;
+            grid-template-columns:  1fr 1fr 7fr 1fr 1fr;
             grid-template-rows: auto auto auto;
-            h4 {
-                color: $main-blue;
-            }
+
+            
             p {
                 line-height: 2;
                 font-size: 100%;
                 font-weight: 300;
                 text-align: justify;
             }
-            h1 {
-                padding-bottom: 1rem;
-                border-bottom: 1px solid black;
-            }
         } 
         
         .article-meat {
-            grid-area: 2 / 4 / 3 / 5;
+            grid-area: 2 / 2 / 3 / 5;
         }
+        
         
         .cover-img {
             object-fit: cover;
             width: 100%;
-            height: 60vh;
-            margin-top: 7rem;
+            height: 40vh;
         }
     
     
@@ -447,9 +474,40 @@ hr.style2 {
        max-height: 5%;
    }
 
+
+  /*--------------------------------  ARTICLE PAGE STYLING -----------------------------------*/
+    .cover-img {
+        width: 70%;
+        height: 60vh;
+        }
+
+    .article-flex {
+        position: relative;
+        bottom: 30vh;
+        width: 90%;
+        h1 {
+            font-size: 350%;
+            width: 70%;
+        }
+        h4 {
+            font-size: 120%;
+            width: 70%;
+        }
+       p {
+           font-size: 150%;
+       }
+    }
+    .article {
+        width: 90%;
+        margin-top: 2rem;
+        grid-template-columns:  1fr 1fr 7fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .article-meat {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
   } 
-   /*-------------------------------- BLOG ARTICLE PAGE STYLING -----------------------------------*/
+   
    
 
-
-     

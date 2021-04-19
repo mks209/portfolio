@@ -53,8 +53,8 @@ body {
 
 .logo {
   grid-area: 1 / 1 / 2 / 2;
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 3rem;
+  height: 3rem;
   object-fit: cover;
   margin-left: 0.2rem; }
 
@@ -284,38 +284,59 @@ hr.style2 {
   align-self: flex-start; }
 
 /*-------------------------------- ARTICLE PAGE STYLING -----------------------------------*/
+.pinkbox {
+  margin-top: 4em;
+  width: 100%;
+  height: 60vh;
+  background-color: #F6CCB0; }
+
+.big-article-container {
+  display: flex;
+  justify-content: center; }
+
 .article-flex {
+  position: relative;
+  bottom: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw; }
+  width: 85vw;
+  background-color: white; }
+  .article-flex h4 {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 85%; }
+  .article-flex h1 {
+    padding-top: 5rem;
+    font-size: 250%;
+    text-align: left;
+    width: 90%;
+    color: #0D5EBA;
+    background-color: transparent; }
 
 article {
   display: grid;
   width: 100vw;
   height: auto;
   margin-top: 2rem;
-  grid-template-columns: 0.5fr 1fr 1fr 7fr 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr 7fr 1fr 1fr;
   grid-template-rows: auto auto auto; }
-  article h4 {
-    color: #4361ee; }
   article p {
     line-height: 2;
     font-size: 100%;
     font-weight: 300;
     text-align: justify; }
-  article h1 {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid black; }
 
 .article-meat {
-  grid-area: 2 / 4 / 3 / 5; }
+  grid-area: 2 / 2 / 3 / 5; }
 
 .cover-img {
   object-fit: cover;
   width: 100%;
-  height: 60vh;
-  margin-top: 7rem; }
+  height: 40vh; }
 
 /*-------------------------------- RESPONSIVE MEDIA QUERIES -----------------------------------*/
 /* For mobile phones: */
@@ -431,7 +452,33 @@ article {
     max-width: 40%; }
 
   .footercontainer {
-    max-height: 5%; } }
-/*-------------------------------- BLOG ARTICLE PAGE STYLING -----------------------------------*/
+    max-height: 5%; }
+
+  /*--------------------------------  ARTICLE PAGE STYLING -----------------------------------*/
+  .cover-img {
+    width: 70%;
+    height: 60vh; }
+
+  .article-flex {
+    position: relative;
+    bottom: 30vh;
+    width: 90%; }
+    .article-flex h1 {
+      font-size: 350%;
+      width: 70%; }
+    .article-flex h4 {
+      font-size: 120%;
+      width: 70%; }
+    .article-flex p {
+      font-size: 150%; }
+
+  .article {
+    width: 90%;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr 7fr 1fr 1fr;
+    grid-template-rows: auto auto auto; }
+
+  .article-meat {
+    grid-area: 2 / 3 / 3 / 4; } }
 
 /*# sourceMappingURL=style.css.map */
