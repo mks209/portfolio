@@ -175,6 +175,7 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
         grid-area: 1 / 2 / 2 / 4;
         position: relative;
         left: 4rem;
+        bottom: 0.5rem;
         overflow: hidden;
         object-fit: cover;
         width: 60%;
@@ -291,7 +292,7 @@ a:hover {
 }
 .blog-banner-container {
     display: grid;
-    max-height: 90vh;
+    max-height: 100vh;
     width: 100vw;
     grid-template-rows: 4rem 1.5fr 1fr 0.5fr 2fr;
     grid-template-columns: 1fr;
@@ -303,7 +304,7 @@ a:hover {
 
 
 .blog-title {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 3 / 1 / 5 / 2;
     width: 100%;
     text-align: center;
     font-family: $headingfont;
@@ -478,22 +479,105 @@ hr.style2 {
 [class*="col-"] {
     width: 100%;
   }
-  @media only screen and (min-width: 600px) {
+
+  @media only screen and (device-width: 768px) and (max-device-width: 1024px) {
+    
     /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    
+    /*-------------------------------- (tablet) Home Banner Re-STYLING -----------------------------------*/
+
+    .banner h1 {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .banner ul {
+        font-size: 120%;
+    }
+    
+
+    /*-------------------------------- (tablet) About Me Re-STYLING -----------------------------------*/
+
+    .aboutme {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .mouse {
+        grid-area: 1 / 3 / 2 / 4;
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .aboutwriting {
+        margin-right: 4rem;
+    }
+
+    /*-------------------------------- (tablet) Footer Re-STYLING -----------------------------------*/
+    .footer-container {
+        height: 40vh;
+        h2 {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+    }
+
+    .footerflex {
+        height: 40vh;
+    }
+
+    footer {
+        height: 30vh;
+    }
+
+    .footer-container .card-pic {
+        width: 50%;
+        justify-self: end;
+        
+    }
+
+    .contactinfo {
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .social-icons a img {
+        width: 23%;
+        }
+
+
+    /*-------------------------------- (tablet) Blog Banner Re-STYLING -----------------------------------*/
+
+    .black-button {
+        width: 5%;
+    }
+
+    .typing-img {
+        width: 70%;
+    }
+
+    .writing-img {
+        width: 90%;
+    }
+    .blog-title {
+        font-size: 140%;
+    }
+
+    /*-------------------------------- (tablet) Blog Article Re-STYLING -----------------------------------*/
+
+    .pinkbox img {
+        width: 65%;
+        position: relative;
+        top: 2.5rem;
+    }
+
   }
-  @media only screen and (min-width: 768px) {
+
+
+
+
+
+
+  @media only screen and (min-width: 1200px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -508,7 +592,7 @@ hr.style2 {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
-    /*-------------------------------- HEADER Re-STYLING -----------------------------------*/
+    /*-------------------------------- (desktop) HEADER Re-STYLING -----------------------------------*/
 
     .menu {
         grid-area: 1 / 2 / 2 / 3;
@@ -519,7 +603,6 @@ hr.style2 {
             font-size: 105%;
         }
     }
-     /*-------------------------------- Header Re-STYLING -----------------------------------*/
 
     .header-cont {
         height: 4rem;
@@ -531,7 +614,7 @@ hr.style2 {
         width: 3.6rem;
         height: 3.6rem;
     }
-    /*-------------------------------- About Me Re-STYLING -----------------------------------*/
+    /*-------------------------------- (desktop) About Me Re-STYLING -----------------------------------*/
     .mouse {
         width: 50%;
     }
@@ -539,7 +622,7 @@ hr.style2 {
         height: 40vh;
     }
 
-     /*-------------------------------- Footer Re-STYLING -----------------------------------*/
+     /*-------------------------------- (desktop) Footer Re-STYLING -----------------------------------*/
     
     
      .footer-container {
@@ -576,7 +659,7 @@ hr.style2 {
          margin-right: -5%;
      }
 
-      /*-------------------------------- HOME BANNER Re-STYLING -----------------------------------*/
+      /*-------------------------------- (desktop) HOME BANNER Re-STYLING -----------------------------------*/
 
     .banner {
         grid-template: 7em repeat(5, 1fr) / repeat(5, 1fr);
@@ -598,7 +681,7 @@ hr.style2 {
     .banner ul {
         line-height: 8vh;
     }
-    /*-------------------------------- About Me Re-STYLING -----------------------------------*/
+    /*-------------------------------- (desktop) About Me Re-STYLING -----------------------------------*/
 
     .aboutme {
         height: 80vh;
@@ -620,7 +703,7 @@ hr.style2 {
 
 
 
-  /*--------------------------------  Blog Main Banner Re-STYLING -----------------------------------*/
+  /*--------------------------------  (desktop) Blog Main Banner Re-STYLING -----------------------------------*/
     .blog-banner-container {
         grid-template: 5rem 1fr 1fr / 1fr 1fr 1fr !important;
         height: 100vh;
@@ -666,7 +749,7 @@ hr.style2 {
        background-color: $dark-peach;
    }
   
-    /*-------------------------------- BLOG LIST Re-STYLING -----------------------------------*/
+    /*-------------------------------- (desktop) BLOG LIST Re-STYLING -----------------------------------*/
     .blog-major-container {
         display: flex;
         flex-direction: column;
@@ -696,7 +779,7 @@ hr.style2 {
    }
 
 
-  /*--------------------------------  ARTICLE PAGE Re-STYLING -----------------------------------*/
+  /*--------------------------------  (desktop) ARTICLE PAGE Re-STYLING -----------------------------------*/
   .pinkbox {
     img {
         width: 60%;
