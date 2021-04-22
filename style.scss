@@ -31,6 +31,10 @@ body {
         font-family: $headingfont;
         font-weight: 700;
     }
+    h3 {
+        font-family: $headingfont;
+        font-weight: 700;
+    }
 }
 
 /*-------------------------------- HEADER STYLING -----------------------------------*/
@@ -147,12 +151,7 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     }
 }
 
-.sep {
-    height: 50px;
-    width: 100%;
-    background-color: $light-peach;
-    z-index: 2;
-}
+
 
 
 
@@ -161,21 +160,46 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
 .aboutmecontainer {
     display: flex;
     justify-content: center;
+    background-color: $light-peach;
 }
 
 .aboutme {
     display: grid;
-    width: 100%;
+    width: 95%;
     height: 90vh;
-    grid-template: 1fr 2fr 2fr / 1fr 1fr;
+    grid-template: 1fr 2fr 2fr / 1fr 1fr 1fr;
     justify-items: center;
     align-items: start;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
+    .mouse {
+        grid-area: 1 / 2 / 2 / 4;
+        position: relative;
+        left: 4rem;
+        overflow: hidden;
+        object-fit: cover;
+        width: 60%;
+    }
+    .span2 {
+       grid-area: 2 / 1 / 4 / 4;
+       position: relative;
+       bottom: 3rem;;
+    }
+    .button-1 {
+        text-decoration: none;
+        border-radius: 12px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+        border: 0;
+        
+    }
+    
 }
 .aboutwriting {
-    grid-area: 1 / 1 / 4 / 2;
+    grid-area: 1 / 1 / 4 / 3;
     max-width: 100%;
-    margin: 5% 0 0 20%;
+    margin: 5% 0 0 8%;
+    line-height: 1.75;
    
 }
 
@@ -183,6 +207,7 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     grid-area: 1 / 2 / 4 / 3;
     max-width: 80%;
 }
+
 
 
 
@@ -246,7 +271,7 @@ footer {
 
 /* unvisited link */
 a:link {
-    text-decoration:none;
+    text-decoration:none !important;
 }
 
 /* visited link */
@@ -353,14 +378,13 @@ hr.style2 {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        }
+    }
         
-        .card-details a {
-        align-self: flex-start;
-        }
+        
         .card-container {
             background-color: $dark-peach;
         }
+    
   /*-------------------------------- ARTICLE PAGE STYLING -----------------------------------*/
 
         .pinkbox {
@@ -554,7 +578,7 @@ hr.style2 {
     }
     .banner h1 {
         grid-area: 2 / 3 / 4 / 6;
-        font-size: 400%;
+        font-size: 300%;
         margin-left: 20%;
     }
     .girl-drawing {
@@ -568,6 +592,28 @@ hr.style2 {
     .banner ul {
         line-height: 8vh;
     }
+    /*-------------------------------- About Me Re-STYLING -----------------------------------*/
+
+    .aboutme {
+        height: 80vh;
+        font-size: 130%;
+        align-content: start;
+        border-top: 3px solid black;
+        width: 100vw;
+        .mouse {
+            width: 100%;
+            grid-area: 1 / 3 / 4 / 4;
+            position: relative;
+            bottom: 1.5rem;
+        }
+        .button-1 {
+            font-size: 90%;
+            font-family: 'Oxygen', sans-serif;
+        }
+    }
+
+
+
   /*--------------------------------  Blog Main Banner Re-STYLING -----------------------------------*/
     .blog-banner-container {
         grid-template: 5rem 1fr 1fr / 1fr 1fr 1fr !important;
