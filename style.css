@@ -393,7 +393,8 @@ article {
   grid-template-rows: auto auto auto; }
 
 .article-meat {
-  grid-area: 2 / 2 / 3 / 5; }
+  grid-area: 2 / 2 / 3 / 5;
+  width: 100%; }
 
 .cover-img {
   object-fit: cover;
@@ -773,7 +774,7 @@ article {
       width: 70%; }
 
   article {
-    width: 90%;
+    width: 110%;
     margin-top: 2rem;
     grid-template-columns: 1fr 1fr 7fr 1fr 1fr;
     grid-template-rows: auto auto auto; }

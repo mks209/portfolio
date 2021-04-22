@@ -459,6 +459,7 @@ hr.style2 {
         
         .article-meat {
             grid-area: 2 / 2 / 3 / 5;
+            width: 100%;
         }
         
         
@@ -891,7 +892,7 @@ hr.style2 {
 
     }
     article {
-        width: 90%;
+        width: 110%;
         margin-top: 2rem;
         grid-template-columns:  1fr 1fr 7fr 1fr 1fr;
         grid-template-rows: auto auto auto; 
